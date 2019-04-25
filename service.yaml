@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: kubernetes-hs
+  namespace: default
+spec:
+  runLatest:
+    configuration:
+      revisionTemplate:
+        spec:
+          container:
+            image: gcr.io/cloud-run-demo-238520/kubernetes-hs:latest
+            env:
+               - name: TARGET
+                 value: "Kubernetes, Suneej loves you! From Haskell."
