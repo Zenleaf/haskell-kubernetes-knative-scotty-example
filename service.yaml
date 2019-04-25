@@ -9,7 +9,8 @@ spec:
       revisionTemplate:
         spec:
           container:
-            image: gcr.io/cloud-run-demo-238520/kubernetes-hs:latest
+            # Edit the image {username}:
+            image: {username}/kubernetes-hs
             env:
                - name: TARGET
-                 value: "Kubernetes, Suneej loves you! From Haskell."
+                 value: "Kubernetes World."
