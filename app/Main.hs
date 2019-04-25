@@ -22,6 +22,6 @@ route :: T.Text -> ScottyM()
 route t = get "/" $ hello t
   
 hello :: T.Text -> ActionM()
-hello t = html $ mconcat ["<DOCTYPE! html><html><head><title>Haskell Kubernetes</title></head><body><h1>Hello " 
+hello t = html $ mconcat ["<!DOCTYPE html><html><head><title>Haskell Kubernetes</title></head><body><h1>Hello " 
                          , t 
                          , "</h1></body></html>"] 
