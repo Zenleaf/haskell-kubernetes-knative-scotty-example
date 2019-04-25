@@ -1,4 +1,4 @@
-# kubernetes-hs
+# Haskell web app on Kubernetes cluster
 
 ## Build and deploy this sample
 
